@@ -17,9 +17,9 @@ int main(){
     printf("Enter the rows and columns of matrix b:\n ");
     scanf("%d %d", &brows, &bcolumns);
     printf("Enter elements of matrix b:\n ");
-     for(int i=0; i<arows; i++)
+     for(int i=0; i<brows; i++)
     {
-        for(int j=0; j<acolumns; j++)
+        for(int j=0; j<bcolumns; j++)
         {
             scanf("%d", &b[i][j]);
         }
@@ -39,8 +39,7 @@ int main(){
                 sum = 0;
             }
         }
-    }
-    printf("Resultant matrix:\n");
+        printf("Resultant matrix:\n");
     for(int i=0; i<arows; i++)
     {
         for(int j=0; j<bcolumns; j++)
@@ -50,5 +49,6 @@ int main(){
         printf("\n");
     }
     printf("\n"); 
+    }
     return 0;
 }
